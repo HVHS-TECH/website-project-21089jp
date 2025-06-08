@@ -46,7 +46,38 @@ html, body {
     display: flex;
 }
 
+.container1 .item3 {
+  justify-content: center; 
+  flex-direction: column; 
+   gap: 0.5rem;
+  height: 100%;
+} 
 
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;  
+  max-width: 300px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: left;
+}
+
+.contact-list li {
+  display: flex;
+   align-items: flex-start; 
+   text-decoration: none;
+   padding-bottom: 6%;
+}
+
+.contact-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.contact-list a {
+  text-decoration: none;
+}
 
 .container1 {
      padding-top: 5rem;
