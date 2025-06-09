@@ -8,18 +8,20 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-padding-top: 5%;
+    scroll-behavior: smooth !important;
 }
 
 .navigation {
      overflow: hidden;
      width: 98%;
-     top: 1;
+     top: 0.25%;
      background-color: #133c9d;
      display: flex;
      justify-content: center;
      position: fixed;
      left: 1%;
-     border-radius: 6px;
+   /*  border-radius: 6px; */
 }
 
 .navigation a {
@@ -49,11 +51,10 @@ html, body {
 .container1 .item3 {
   justify-content: center; 
   flex-direction: column; 
-   gap: 0.5rem;
   height: 100%;
 } 
 
-.contact-list {
+.contact-list, .information-list {
   list-style: none;
   padding: 0;
   margin: 0 auto;  
@@ -62,7 +63,7 @@ html, body {
   text-align: left;
 }
 
-.contact-list li {
+.contact-list li, .information-list li {
   display: flex;
    align-items: flex-start; 
    text-decoration: none;
@@ -79,8 +80,19 @@ html, body {
   text-decoration: none;
 }
 
+.containers {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    gap: 1%;
+    margin: 0 auto;    
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
 .container1 {
-     padding-top: 5rem;
+     padding-top: 17.5%;
+     
     grid-template-columns: 1fr;
     grid-template-rows: 12.5% 50% auto;
     grid-template-areas:
@@ -91,7 +103,7 @@ html, body {
 
 .container2 {
      grid-template-columns: 1fr;
-     grid-template-rows: auto auto;
+     grid-template-rows: 45% 55%;
      grid-template-areas:
       "item1"
       "item2";
@@ -99,7 +111,7 @@ html, body {
 
 .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 20% 30% 50%;
     grid-template-areas:
       "item1"
       "item2"
@@ -107,6 +119,7 @@ html, body {
 }
 
 .container4 {
+     
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
@@ -115,17 +128,15 @@ html, body {
       "item3";   
 }
 
-.containers {
-    width: 98%;
-    height: 100%;
-    display: grid;
-    gap: 2%;
-    margin: 0 auto;
-    margin-top: 1%;
-}
-
 footer {
      background-color: green;
+}
+
+.information {
+     padding-left: 2%;
+     padding-right: 2%;
+     text-wrap: pretty;
+     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 
 /*******************
@@ -166,7 +177,11 @@ h1, h2, h3, p {
 }
 
 h1 { 
-     text-decoration: underline solid black 2.5%;
+     
+}
+
+#myName {
+     font-size: clamp(2rem, 4vw, 3rem);
 }
 
 img {
@@ -174,11 +189,18 @@ img {
      height: 100%;
 }
 
+.sectionTitle {
+text-decoration: underline solid black 2.5%;
+}
+
 #idPhoto {
        border-radius: 50%;
-       width: 100%;
+      
+}
+
+img {
+      width: 100%;
        height: 100%;
-       
 }
 
 .container1 .item1 {
