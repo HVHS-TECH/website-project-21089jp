@@ -8,8 +8,12 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    scroll-padding-top: 5%;
+    scroll-padding-top: 4%;
     scroll-behavior: smooth !important;
+    background-image: url("images/paperTexture.png");
+    background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+    background-size: 100% auto
 }
 
 .navigation {
@@ -25,16 +29,18 @@ html, body {
 }
 
 .navigation a {
-   font-size: 1.4rem;
+   font-size: 1.1rem;
       text-align: center;
         padding: 20px 24px;
       display: inline-block;
         color: #f2f2f2;
      text-align: center;
+  justify-content: center;      
 }
 
 .navigation li {
      display: inline;
+     box-sizing: border-box;
      border-right: 1px solid #ffffff4d;
      border-left: 1px solid #ffffff4d;
      text-align: center;
@@ -48,6 +54,11 @@ html, body {
     display: flex;
 }
 
+.navigation a:hover {
+  background-color: #2a54b8;
+  color: #ffffff;
+}
+
 .container1 .item3 {
   justify-content: center; 
   flex-direction: column; 
@@ -55,29 +66,48 @@ html, body {
 } 
 
 .contact-list, .information-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;  
+
+  margin: auto;  
   max-width: 300px;
-  font-size: clamp(1.5rem, 3vw, 2rem);
   text-align: left;
+  
 }
 
 .contact-list li, .information-list li {
-  display: flex;
-   align-items: flex-start; 
-   text-decoration: none;
-   padding-bottom: 6%;
+  display: list-item;
+  align-items: flex-start; 
+  text-decoration: none;
+  padding-bottom: 6%;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.contact-list li {
+     display: flex;
+       padding: 1%;
+     
+}
+
+.information-list {
+list-style-type: square;
+padding-top: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: 0;
 }
 
 .contact-icon {
   width: 1.5rem;
   height: 1.5rem;
   object-fit: contain;
+  margin-right: 4%;
 }
 
 .contact-list a {
   text-decoration: none;
+  color: black; 
 }
 
 .containers {
@@ -87,12 +117,11 @@ html, body {
     gap: 1%;
     margin: 0 auto;    
     padding-bottom: 10%;
-    padding-top: 10%;
+    padding-top: 12%;
 }
 
 .container1 {
      padding-top: 17.5%;
-     
     grid-template-columns: 1fr;
     grid-template-rows: 12.5% 50% auto;
     grid-template-areas:
@@ -111,7 +140,7 @@ html, body {
 
 .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 30% 50%;
+    grid-template-rows: 20% 35% 45%;
     grid-template-areas:
       "item1"
       "item2"
@@ -119,7 +148,6 @@ html, body {
 }
 
 .container4 {
-     
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
@@ -128,15 +156,52 @@ html, body {
       "item3";   
 }
 
+.container3 .item2 li {
+     padding: 0;
+}
+
 footer {
-     background-color: green;
+ background-color: #f4efe7;
+ text-align: right;
+ padding: 1rem;
+ display: flex; 
+ height: 40%;
+ 
+ /* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
+justify-content: space-between
+}
+
+
+footer h1 {
+ text-align: left;
+ font-size: clamp(1.6rem, 2vw, 2rem);
+}
+
+#backToTopButton {
+  background-color: #1e6abb;
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
 }
 
 .information {
-     padding-left: 2%;
-     padding-right: 2%;
-     text-wrap: pretty;
-     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 90%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  justify-content: center;
+  display: inline-flex;
 }
 
 /*******************
@@ -172,16 +237,22 @@ assigning grid areas
 /*****************
 using the font in my style guide
 *****************/
-h1, h2, h3, p {
+h1, h2, h3, p, li {
      font-family: 'Montserrat';
 }
 
-h1 { 
-     
+li:first-child {
+  margin-top: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+/* overwrites above code */
+.navigation li:first-child {
+  margin: 0;
 }
 
 #myName {
-     font-size: clamp(2rem, 4vw, 3rem);
+     font-size: clamp(2.5rem, 4vw, 3rem);
+     margin: 5%
 }
 
 img {
@@ -191,16 +262,18 @@ img {
 
 .sectionTitle {
 text-decoration: underline solid black 2.5%;
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 0;
 }
 
 #idPhoto {
-       border-radius: 50%;
+    border-radius: 50%;
       
 }
 
 img {
-      width: 100%;
-       height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .container1 .item1 {
@@ -208,3 +281,71 @@ img {
      border: none;
      margin: 1%;
 }
+
+
+/******************************
+  For screen widths 374px and below,
+  use smaller font sizes 
+*******************************/
+@media (max-width: 374px) {
+   html{
+     scroll-padding-top: 6%;
+  }
+
+  .containers {
+    padding-top: 12.5%;
+  }
+
+  .container1 {
+    padding-top: 20%;
+  }
+
+  .information {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+
+  .contact-list li, .information-list li {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+
+  .navigation a {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  #myName{
+     font-size: clamp(2rem, 4vw, 2.5rem);
+  }
+}
+
+/****************************** 
+  At screen width 425px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 425px) {
+
+   .containers {
+    padding-top: 12%;
+  }
+
+  .container1 {
+    padding-top: 17%;
+  }
+
+  .information {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+   .contact-list li, .information-list li {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+  }
+
+   .navigation a {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  }
+}
+
+
