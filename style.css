@@ -349,3 +349,49 @@ img {
 }
 
 
+/****************************** 
+  At screen width 425px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 768px) {
+  .container1{
+
+  }
+
+  .container2{
+
+  }
+
+  .container3{
+
+  }
+
+  .container4{
+
+  }
+}
+
+
+/****************************** 
+  At screen width 425px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 1024px) {
+  .container1{
+
+  }
+
+  .container2{
+
+  }
+
+  .container3{
+
+  }
+
+  .container4{
+
+  }
+}
+
+
