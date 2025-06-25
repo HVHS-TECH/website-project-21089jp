@@ -3,287 +3,351 @@
 * Stylesheet for one-page CV website
 * Made by Jayden Pressley
 ***********************************************/
-  html{
-     height: 100%;
-     margin: 0;
-     padding: 0;
-     overflow-x: hidden;
-     scroll-padding-top: 4%;
-     scroll-behavior: smooth !important;
-     background-image: url("images/paperTexture.png");
-     background-color: rgba(255,255,255,0.5);
-     background-blend-mode: lighten;
-     background-size: 100% auto 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-padding-top: 4%;
+    scroll-behavior: smooth !important;
+    background-image: url("images/paperTexture.png");
+    background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+    background-size: 100% auto
 }
- .navigation {
+
+.navigation {
      overflow: hidden;
+     width: 98%;
      top: 0.25%;
      background-color: #133c9d;
      display: flex;
      justify-content: center;
      position: fixed;
-     width: 98%;
      left: 1%;
-     right: 1%;
-    /* border-radius: 6px;*/
+   /*  border-radius: 6px; */
 }
- .navigation a {
-     font-size: 1.1rem;
+
+.navigation a {
+   font-size: 1.1rem;
+      text-align: center;
+        padding: 20px 24px;
+      display: inline-block;
+        color: #f2f2f2;
      text-align: center;
-     padding: 20px 24px;
-     display: inline-block;
-     color: #f2f2f2;
-     text-align: center;
-     justify-content: center;
+  justify-content: center;      
 }
- .navigation li {
+
+.navigation li {
      display: inline;
      box-sizing: border-box;
      border-right: 1px solid #ffffff4d;
      border-left: 1px solid #ffffff4d;
      text-align: center;
 }
- .navigation ul {
-     width: 100%;
-     list-style: none;
-     margin: 0;
-     padding: 0;
+
+.navigation ul {
+      width: 100%;
+      list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation a:hover {
+  background-color: #2a54b8;
+  color: #ffffff;
+}
+
+.container1 .item3 {
+  justify-content: center; 
+  flex-direction: column; 
+  height: 100%;
+} 
+
+.contact-list, .information-list {
+
+  margin: auto;  
+  max-width: 300px;
+  text-align: left;
+  
+}
+
+.contact-list li, .information-list li {
+  display: list-item;
+  align-items: flex-start; 
+  text-decoration: none;
+  padding-bottom: 6%;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.contact-list li {
      display: flex;
+       padding: 1%;
+     
 }
- .navigation a:hover {
-     background-color: #2a54b8;
-     color: #ffffff;
+
+.information-list {
+list-style-type: square;
+padding-top: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
- .container1 .item3 {
-     justify-content: center;
-     flex-direction: column;
-     height: 100%;
+
+.contact-list {
+  list-style-type: none;
+  margin: 0;
 }
- .contact-list, .information-list {
-     margin: auto;
-     max-width: 300px;
-     text-align: left;
+
+.contact-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  margin-right: 4%;
 }
- .contact-list li, .information-list li {
-     display: list-item;
-     align-items: flex-start;
-     text-decoration: none;
-     padding-bottom: 6%;
-     font-size: clamp(1.3rem, 3vw, 2rem);
+
+.contact-list a {
+  text-decoration: none;
+  color: black; 
 }
- .contact-list li {
-     display: flex;
-     padding: 1%;
+
+.containers {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    gap: 1%;
+    margin: 0 auto;    
+    padding-bottom: 10%;
+    padding-top: 12%;
 }
- .information-list {
-     list-style-type: square;
-     padding-top: 0;
-     font-size: clamp(1.5rem, 3vw, 2rem);
-}
- .contact-list {
-     list-style-type: none;
-     margin: 0;
-}
- .contact-icon {
-     width: 1.5rem;
-     height: 1.5rem;
-     object-fit: contain;
-     margin-right: 4%;
-}
- .contact-list a {
-     text-decoration: none;
-     color: black;
-}
- .containers {
-     width: 98%;
-     height: 100%;
-     display: grid;
-     gap: 1%;
-     margin: 0 auto;
-     padding-bottom: 10%;
-     padding-top: 12%;
-}
- .container1 {
+
+.container1 {
      padding-top: 17.5%;
-     grid-template-columns: 1fr;
-     grid-template-rows: 12.5% 50% auto;
-     grid-template-areas: "item2" "item1" "item3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12.5% 50% auto;
+    grid-template-areas:
+      "item2"
+      "item1"
+      "item3";
 }
- .container2 {
+
+.container2 {
      grid-template-columns: 1fr;
      grid-template-rows: 45% 55%;
-     grid-template-areas: "item1" "item2";
+     grid-template-areas:
+      "item1"
+      "item2";
 }
- .container3 {
-     grid-template-columns: 1fr;
-     grid-template-rows: 20% 35% 45%;
-     grid-template-areas: "item1" "item2" "item3";
+
+.container3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 35% 45%;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
 }
- .container4 {
-     grid-template-columns: 1fr;
-     grid-template-rows: auto auto auto;
-     grid-template-areas: "item1" "item2" "item3";
+
+.container4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";   
 }
- .container3 .item2 li {
+
+.container3 .item2 li {
      padding: 0;
 }
- footer {
-     background-color: #f4efe7;
-     text-align: right;
-     padding: 1rem;
-     display: flex;
-     height: 40%;
-    /* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
-     justify-content: space-between 
+
+footer {
+ background-color: #f4efe7;
+ text-align: right;
+ padding: 1rem;
+ display: flex; 
+ height: 40%;
+ 
+ /* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
+justify-content: space-between
 }
- footer h1 {
-     text-align: left;
-     font-size: clamp(1.6rem, 2vw, 2rem);
+
+
+footer h1 {
+ text-align: left;
+ font-size: clamp(1.6rem, 2vw, 2rem);
 }
- #backToTopButton {
-     background-color: #1e6abb;
-     width: 30%;
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 3rem;
-     color: white;
-     text-decoration: none;
+
+#backToTopButton {
+  background-color: #1e6abb;
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
 }
- #backToTopBtn:hover {
-     background-color: #0056b3;
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
 }
- .information {
-     padding-left: 2.5%;
-     padding-right: 2.5%;
-     width: 90%;
-     overflow-wrap: break-word;
-     word-break: break-word;
-     font-size: clamp(1.2rem, 2vw, 1.5rem);
-     justify-content: center;
-     display: inline-flex;
+
+.information {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 90%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  justify-content: center;
+  display: inline-flex;
 }
+
 /*******************
 assigning grid areas
 ********************/
- .item1{
+.item1{
      grid-area: item1;
 }
- .item2 {
+
+.item2 {
      grid-area: item2;
 }
- .item3 {
+
+.item3 {
      grid-area: item3;
 }
- .item4 {
+
+.item4 {
      grid-area: item4;
 }
- .item5 {
-     grid-area: item5;
-     display: none;
+
+.item5 {
+     grid-area: item5;   
 }
- .items {
-     background-color: #f4efe7;
-     border: 1px solid black;
+
+.items {
+      background-color: #f4efe7;
+      border: 1px solid black;
      text-align: center;
 }
+
 
 /*****************
 using the font in my style guide
 *****************/
- h1, h2, h3, p, li {
+h1, h2, h3, p, li {
      font-family: 'Montserrat';
 }
- li:first-child {
-     margin-top: clamp(0.5rem, 2vw, 1.5rem);
+
+li:first-child {
+  margin-top: clamp(0.5rem, 2vw, 1.5rem);
 }
+
 /* overwrites above code */
- .navigation li:first-child {
-     margin: 0;
+.navigation li:first-child {
+  margin: 0;
 }
- #myName {
+
+#myName {
      font-size: clamp(2.5rem, 4vw, 3rem);
-     text-align: center;
-     margin-top: 4%;
+     margin: 5%
 }
- img {
+
+img {
      width: 100%;
      height: 100%;
 }
- .sectionTitle {
-     text-decoration: underline solid black 2.5%;
-     font-size: clamp(2rem, 4vw, 3rem);
-     margin-bottom: 0;
+
+.sectionTitle {
+text-decoration: underline solid black 2.5%;
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 0;
 }
- #idPhoto {
-     border-radius: 50%;
+
+#idPhoto {
+    border-radius: 50%;
+      
 }
- img {
-     width: 100%;
-     height: 100%;
+
+img {
+    width: 100%;
+    height: 100%;
 }
- .container1 .item1 {
+
+.container1 .item1 {
      background-color: transparent;
      border: none;
      margin: 1%;
 }
 
+
 /******************************
   For screen widths 374px and below,
   use smaller font sizes 
 *******************************/
- @media (max-width: 374px) {
-     html{
-         scroll-padding-top: 6%;
-    }
-     .containers {
-         padding-top: 12.5%;
-    }
-     .container1 {
-         padding-top: 20%;
-    }
-     .information {
-         font-size: clamp(1.1rem, 4vw, 1.3rem);
-    }
-     .contact-list li, .information-list li {
-         font-size: clamp(1.1rem, 4vw, 1.4rem);
-    }
-     .navigation a {
-         font-size: clamp(0.9rem, 4vw, 1.2rem);
-    }
-     .sectionTitle {
-         font-size: clamp(1.5rem, 4vw, 2rem);
-    }
-     #myName{
-         font-size: clamp(2rem, 4vw, 2.5rem);
-    }
+@media (max-width: 374px) {
+   html{
+     scroll-padding-top: 6%;
+  }
+
+  .containers {
+    padding-top: 12.5%;
+  }
+
+  .container1 {
+    padding-top: 20%;
+  }
+
+  .information {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+
+  .contact-list li, .information-list li {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+
+  .navigation a {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  #myName{
+     font-size: clamp(2rem, 4vw, 2.5rem);
+  }
 }
 
 /****************************** 
   At screen width 425px and above, 
   bump up the min and max font sizes 
 *******************************/
- @media (min-width: 425px) {
-     .containers {
-         padding-top: 13%;
-    }
-     .container1 {
-         padding-top: 17%;
-    }
-     .information {
-         font-size: clamp(1.5rem, 3vw, 2rem);
-    }
-     .contact-list li, .information-list li {
-         font-size: clamp(1.6rem, 3vw, 2rem);
-    }
-     .navigation a {
-         font-size: clamp(1.4rem, 3vw, 1.8rem);
-    }
-    #myName{
-      font-size: clamp(3rem, 4vw, 2.5rem);
-    }
+@media (min-width: 425px) {
+
+   .containers {
+    padding-top: 12%;
+  }
+
+  .container1 {
+    padding-top: 17%;
+  }
+
+  .information {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+   .contact-list li, .information-list li {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+  }
+
+   .navigation a {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  }
 }
+
 /****************************** 
 At screen width 480px and above,
 bump up the min and max font sizes 
@@ -396,29 +460,45 @@ bump up the min and max font sizes
 /****************************** 
 At screen width 768px and above
 *******************************/
- @media (min-width: 768px) {
-     .container1{
-         font-size: clamp(1.4rem, 3vw, 2rem);
-    }
-     .container2{
-    }
-     .container3{
-    }
-     .container4{
-    }
-}
-/****************************** 
-At screen width 1024px and above 
-*******************************/
- @media (min-width: 1024px) {
-     .container1{
-    }
-     .container2{
-    }
-     .container3{
-     }
-    .container4{
+@media (min-width: 768px) {
+  .container1{
 
-    }
   }
-         
+
+  .container2{
+
+  }
+
+  .container3{
+
+  }
+
+  .container4{
+
+  }
+}
+
+
+/****************************** 
+  At screen width 1024px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 1024px) {
+  .container1{
+
+  }
+
+  .container2{
+
+  }
+
+  .container3{
+
+  }
+
+  .container4{
+
+  }
+}
+
+
