@@ -224,6 +224,7 @@ assigning grid areas
 }
 
 .item5 {
+    display: none;
      grid-area: item5;   
 }
 
@@ -367,10 +368,10 @@ bump up the min and max font sizes
 *******************************/
  @media (min-width: 550px) {
      .containers {
-         padding-top: 8%;
+         padding-top: 10%;
     }
      .container1 {
-         padding-top: 13%;
+         padding-top: 15%;
     }
      .information {
          font-size: clamp(1.7rem, 3vw, 2rem);
@@ -399,8 +400,8 @@ bump up the min and max font sizes
          padding-top: 10%;
     }
      .container1 {
-         padding-top: 12.5%;
-         grid-template-columns: 50% 50%;
+         padding-top: 13.5%;
+         grid-template-columns: 49% auto;
          grid-template-rows: 25% auto;
          grid-template-areas: 
             "item2 item2" 
@@ -455,8 +456,46 @@ bump up the min and max font sizes
     .item5{
         display: block;
     }
-
 }
+
+/****************************** 
+At screen width 650px and above, 
+first layout change in the site,
+bump up the min and max font sizes 
+*******************************/
+ @media (min-width: 650px) {
+    .information {
+         font-size: clamp(1.7rem, 3vw, 2rem);
+    }
+     .contact-list li, .information-list li {
+         font-size: clamp(1.6rem, 3vw, 2rem);
+    }
+
+    .contact-list li {
+        overflow-wrap: break-word;
+    }
+    .contact-list {
+         word-break: break-all;
+    }
+     .navigation a {
+         font-size: clamp(1.8rem, 3vw, 1.9rem);
+    }
+    .sectionTitle{
+      font-size: clamp(2.5rem, 4vw, 2.2rem);
+    }
+    .information li {
+         font-size: clamp(1.8rem, 3vw, 2rem);
+    }
+    #myName{
+      margin-top: 3%;
+      font-size: clamp(3.5rem, 4vw, 3.9rem);
+    }
+
+    .item5{
+        display: block;
+    }
+}
+
 /****************************** 
 At screen width 768px and above
 *******************************/
