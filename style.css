@@ -153,12 +153,18 @@ padding-top: 0;
     grid-template-areas:
       "item1"
       "item2"
-      "item3";   
+      "item3"
+      "item5";   
 }
 
 .container3 .item2 li {
      padding: 0;
 }
+
+.container2 .item5 {
+    display: none;
+}
+
 
 footer {
  background-color: #f4efe7;
@@ -400,34 +406,38 @@ bump up the min and max font sizes
     }
      .container1 {
          padding-top: 12.5%;
-         grid-template-columns: 50% 50%;
+         grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
             "item2 item2" 
             "item1 item3" 
     }
      .container2 {
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 49% 50%;
          grid-template-rows: 45% 55%;
          grid-template-areas: 
          "item1 item2" 
          "item1 item5";
     }
      .container3 {
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 49% 50%;
          grid-template-rows: 50% 50%;
          grid-template-areas: 
          "item2 item3"
          "item2 item1";
     }
      .container4 {
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 49% 50%;
          grid-template-rows: 33% 33% 33%;
          grid-template-areas: 
          "item1 item2" 
          "item1 item3" 
          "item1 item5";
     } 
+
+    .container2 .item5 {
+      display: block;
+    }
 
     .information {
          font-size: clamp(1.7rem, 3vw, 2rem);

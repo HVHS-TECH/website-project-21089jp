@@ -4,4 +4,4 @@
 * Made by Jayden Pressley
 ***********************************************/
 
-console.log('Script is running...\nEnable smooth scrolling in "chrome://flags"')
+console.log('script.js is running...\nEnable smooth scrolling in "chrome://flags"')
