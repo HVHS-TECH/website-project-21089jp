@@ -44,6 +44,7 @@ html, body {
      border-right: 1px solid #ffffff4d;
      border-left: 1px solid #ffffff4d;
      text-align: center;
+     width: 25%;
 }
 
 .navigation ul {
@@ -68,7 +69,7 @@ html, body {
 .contact-list, .information-list {
 
   margin: auto;  
-  max-width: 300px;
+ /* max-width: 300px;   NOT SURE IF THIS IS A PROBLEM         */
   text-align: left;
   
 }
@@ -79,11 +80,18 @@ html, body {
   text-decoration: none;
   padding-bottom: 6%;
     font-size: clamp(1.3rem, 3vw, 2rem);
+     overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-list li {
      display: flex;
        padding: 1%;
+     
+}
+
+.contact-list ul {
+     width: 80%;
      
 }
 
@@ -185,7 +193,7 @@ footer h1 {
 
 #backToTopButton {
   background-color: #1e6abb;
-  width: 30%;
+  width: 15%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -377,13 +385,13 @@ bump up the min and max font sizes
          padding-top: 10%;
     }
      .container1 {
-         padding-top: 15%;
+         padding-top: 13%;
     }
      .information {
-         font-size: clamp(1.7rem, 3vw, 2rem);
+         font-size: clamp(2rem, 3vw, 2rem);
     }
      .contact-list li, .information-list li {
-         font-size: clamp(1.9rem, 3vw, 2rem);
+         font-size: clamp(2rem, 3vw, 2rem);
     }
      .navigation a {
          font-size: clamp(1.7rem, 3vw, 1.8rem);
@@ -392,7 +400,7 @@ bump up the min and max font sizes
       font-size: clamp(2.7rem, 4vw, 3rem);
     }
     #myName{
-      font-size: clamp(3.5rem, 4vw, 3.9rem);
+      font-size: clamp(3.8rem, 4vw, 3.9rem);
     }
 }
 
@@ -406,8 +414,8 @@ bump up the min and max font sizes
          padding-top: 10%;
     }
      .container1 {
-         padding-top: 12.5%;
-         grid-template-columns: 50% 50%;
+         padding-top: 13.5%;
+         grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
             "item2 item2" 
@@ -415,7 +423,7 @@ bump up the min and max font sizes
     }
      .container2 {
          grid-template-columns: 49% 50%;
-         grid-template-rows: 45% 55%;
+         grid-template-rows: 50% 50%;
          grid-template-areas: 
          "item1 item2" 
          "item1 item5";
@@ -460,6 +468,7 @@ bump up the min and max font sizes
       font-size: clamp(2.1rem, 4vw, 2.2rem);
     }
     #myName{
+      margin-top: 3%;
       font-size: clamp(3.5rem, 4vw, 3.9rem);
     }
 
@@ -507,11 +516,57 @@ bump up the min and max font sizes
 }
 
 /****************************** 
+At screen width 700px and above, 
+first layout change in the site,
+bump up the min and max font sizes 
+*******************************/
+ @media (min-width: 700px) {
+    .containers {
+      padding-top: 9.5%;
+    }
+
+     .container1 {
+      padding-top: 13%
+    }
+
+    .information {
+         font-size: clamp(1.9rem, 3vw, 2rem);
+    }
+     .contact-list li, .information-list li {
+         font-size: clamp(1.8rem, 3vw, 2rem);
+    }
+
+    .contact-list li {
+        overflow-wrap: break-word;
+    }
+    .contact-list {
+         word-break: break-all;
+    }
+     .navigation a {
+         font-size: clamp(1.9rem, 3vw, 1.9rem);
+    }
+    .sectionTitle{
+      font-size: clamp(2.6rem, 4vw, 2.2rem);
+    }
+    .information li {
+         font-size: clamp(1.9rem, 3vw, 2rem);
+    }
+    #myName{
+      margin-top: 3%;
+      font-size: clamp(3.9rem, 4vw, 3.9rem);
+    }
+}
+
+/****************************** 
 At screen width 768px and above
 *******************************/
 @media (min-width: 768px) {
-  .container1{
 
+  .containers {
+    padding-top: 8.5%;
+  }
+  .container1{
+  padding-top: 11%;
   }
 
   .container2{
@@ -525,6 +580,33 @@ At screen width 768px and above
   .container4{
 
   }
+
+  .information {
+         font-size: clamp(2.1rem, 3vw, 2rem);
+    }
+     .contact-list li, .information-list li {
+         font-size: clamp(2rem, 3vw, 2rem);
+    }
+
+    .contact-list li {
+        overflow-wrap: break-word;
+    }
+    .contact-list {
+         word-break: break-all;
+    }
+     .navigation a {
+         font-size: clamp(1.9rem, 3vw, 1.9rem);
+    }
+    .sectionTitle{
+      font-size: clamp(2.9rem, 4vw, 2.2rem);
+    }
+    .information li {
+         font-size: clamp(1.9rem, 3vw, 2rem);
+    }
+    #myName{
+      margin-top: 3%;
+      font-size: clamp(4.3rem, 4vw, 3.9rem);
+    }
 }
 
 
