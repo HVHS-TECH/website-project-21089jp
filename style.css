@@ -175,7 +175,7 @@ padding-top: 0;
 
 
 footer {
- background-color: #f4efe7;
+ background-color: #f4efe7;   
  text-align: right;
  padding: 1rem;
  display: flex; 
@@ -243,7 +243,7 @@ assigning grid areas
 }
 
 .items {
-      background-color: #f4efe7;
+      background-color: #c3cdff; /*#f4efe7;*/ /*  TESTING  */
       border: 1px solid black;
      text-align: center;
 }
@@ -385,7 +385,7 @@ bump up the min and max font sizes
          padding-top: 10%;
     }
      .container1 {
-         padding-top: 13%;
+         padding-top: 14.5%;
     }
      .information {
          font-size: clamp(2rem, 3vw, 2rem);
