@@ -25,6 +25,7 @@ html, body {
      justify-content: center;
      position: fixed;
      left: 1%;
+         display: inline-block;
    /*  border-radius: 6px; */
 }
 
@@ -243,7 +244,7 @@ assigning grid areas
 }
 
 .items {
-      background-color: #c3cdff; /*#f4efe7;*/ /*  TESTING  */
+      background-color: #ffe7e7; /*#f4efe7;*/ /*  TESTING  */
       border: 1px solid black;
      text-align: center;
 }
@@ -558,27 +559,15 @@ bump up the min and max font sizes
 }
 
 /****************************** 
-At screen width 768px and above
+At screen width 750px and above
 *******************************/
-@media (min-width: 768px) {
+@media (min-width: 750px) {
 
   .containers {
     padding-top: 8.5%;
   }
   .container1{
   padding-top: 11%;
-  }
-
-  .container2{
-
-  }
-
-  .container3{
-
-  }
-
-  .container4{
-
   }
 
   .information {
@@ -609,6 +598,39 @@ At screen width 768px and above
     }
 }
 
+/****************************** 
+At screen width 800px and above
+*******************************/
+@media (min-width: 800px) {
+
+  .containers {
+    padding-top: 8.5%;
+  }
+  .container1{
+  padding-top: 11%;
+  }
+
+  .container2 .information, .container3 .information {
+         font-size: clamp(2.3rem, 3vw, 2.5rem);
+    }
+}
+
+/****************************** 
+At screen width 875px and above
+*******************************/
+@media (min-width: 875px) {
+
+  .containers {
+    padding-top: 8.5%;
+  }
+  .container1{
+  padding-top: 11%;
+  }
+
+  .information{
+     font-size: clamp(2.3rem, 3vw, 2.5rem);
+  }
+}
 
 /****************************** 
   At screen width 1024px and above, 
