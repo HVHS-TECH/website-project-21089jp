@@ -61,6 +61,18 @@ html, body {
   color: #ffffff;
 }
 
+ .container3 .item4 {
+    display: none;
+  }
+
+  #bigScreenInfoC3 {
+    display: none;
+  }
+
+  #littleScreenInfoC3 {
+    display: block;
+  }
+
 .container1 .item3 {
   justify-content: center; 
   flex-direction: column; 
@@ -461,7 +473,7 @@ bump up the min and max font sizes
     }
      .container4 {
          grid-template-columns: 49% 50%;
-         grid-template-rows: 33% 33% 33%;
+         grid-template-rows: 33% 33% 32%;
          grid-template-areas: 
          "item1 item2" 
          "item1 item3" 
@@ -703,21 +715,63 @@ At screen width 950px and above
   bump up the min and max font sizes 
 *******************************/
 @media (min-width: 1024px) {
-  .container1{
 
+  .container3 .item4 {
+    display: block;
   }
 
-  .container2{
-
+   #bigScreenInfoC3 {
+    display: block;
   }
 
-  .container3{
-
+  #littleScreenInfoC3 {
+    display: none;
   }
 
-  .container4{
+.containers {
+         padding-top: 10%;
+    }
+     .container1 {
+         padding-top: 13.5%;
+         grid-template-columns: 49% 50%;
+         grid-template-rows: 25% auto;
+         grid-template-areas: 
+            "item2 item2" 
+            "item1 item3" 
+    }
+     .container2 {
+         grid-template-columns: 33% 33% 32%;;
+         grid-template-rows: 50% 50%;
+         grid-template-areas: 
+         "item1 item2" 
+         "item1 item5";
+    }
+      .container3 {
+        grid-template-columns: 49% 50%;
+        grid-template-rows: 33% 33% 32%;
+        grid-template-areas:
+        "item2 item1"
+        "item4 item3"
+        "item4 item3"
+    }
+     .container4 {
+         grid-template-columns: 33% 33% 32%;;
+         grid-template-rows: 25% 30% auto;;
+         grid-template-areas: 
+         "item1 item1 item1" 
+         "item1 item1 item1" 
+         "item2 item3 item5";
+    } 
 
+    .information {
+    font-size: clamp(2.1rem, 3vw, 2.5rem);
+    margin-bottom: 1%
   }
+
+  .container4 .information-list li {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
 }
 
 
