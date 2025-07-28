@@ -669,6 +669,11 @@ At screen width 950px and above
 *******************************/
 @media (min-width: 950px) {
 
+  #myName{
+      margin-top: 3%;
+      font-size: clamp(5rem, 4vw, 3.9rem);
+    }
+
   .containers {
     padding-top: 8.5%;
   }
@@ -680,10 +685,19 @@ At screen width 950px and above
      font-size: clamp(2.5rem, 3vw, 2.5rem);
   }
 
+   .contact-list li {
+         font-size: clamp(2.55rem, 3vw, 2rem);
+    }
+
+     .information-list li {
+       font-size: clamp(2.4rem, 3vw, 2rem);
+     }
+
    .container2 .information, .container3 .information {
-         font-size: clamp(2.5rem, 3vw, 2.5rem);
+         font-size: clamp(2.7rem, 3vw, 2.5rem);
     }
 }
+
 /****************************** 
   At screen width 1024px and above, 
   bump up the min and max font sizes 
