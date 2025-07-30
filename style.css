@@ -229,6 +229,7 @@ footer h1 {
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   justify-content: center;
   display: inline-flex;
+  margin: 0;
 }
 
 /*******************
@@ -724,6 +725,10 @@ At screen width 950px and above
     display: block;
   }
 
+  .item4{
+    display: flex;
+  }
+
   #littleScreenInfoC3 {
     display: none;
   }
@@ -732,7 +737,7 @@ At screen width 950px and above
          padding-top: 10%;
     }
      .container1 {
-         padding-top: 13.5%;
+         padding-top: 6%;
          grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
@@ -747,7 +752,7 @@ At screen width 950px and above
          "item1 item5";
     }
       .container3 {
-        grid-template-columns: 49% 50%;
+        grid-template-columns: 49% 49%;
         grid-template-rows: 33% 33% 32%;
         grid-template-areas:
         "item2 item1"
@@ -765,7 +770,7 @@ At screen width 950px and above
 
     .information {
     font-size: clamp(2.1rem, 3vw, 2.5rem);
-    margin-bottom: 1%
+    margin-bottom: 3%
   }
 
   .container4 .information-list li {
