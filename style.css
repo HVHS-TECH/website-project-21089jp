@@ -186,6 +186,11 @@ padding-top: 0;
     display: none;
 }
 
+.container3 .information {
+   width: 80%;
+  margin: 0 auto;
+}
+
 
 footer {
  background-color: #f4efe7;   
@@ -290,8 +295,8 @@ img {
 }
 
 .sectionTitle {
-text-decoration: underline solid black 2.5%;
-text-underline-offset: 2px;
+text-decoration: underline double #34495e 7.5%;
+text-underline-offset: 5%;
 font-size: clamp(2rem, 4vw, 3rem);
 margin-bottom: 0;
 }
@@ -717,6 +722,19 @@ At screen width 950px and above
 *******************************/
 @media (min-width: 1024px) {
 
+  .sectionTitle {
+    font-size: clamp(3.4rem, 4vw, 2.2rem);
+  }
+
+  .softwareLang {
+    font-size: clamp(3.1rem, 4vw, 2.2rem);
+  }
+
+  #myName{
+      margin-top: 3%;
+      font-size: clamp(5.5rem, 4vw, 3.9rem);
+  }
+
   .container3 .item4 {
     display: block;
   }
@@ -734,10 +752,10 @@ At screen width 950px and above
   }
 
 .containers {
-         padding-top: 10%;
+         padding-top: 6%;
     }
      .container1 {
-         padding-top: 6%;
+         padding-top: 9%;
          grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
