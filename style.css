@@ -339,6 +339,11 @@ img {
     font-size: clamp(1rem, 4vw, 1.3rem);
   }
 
+  .container2 .information, .container3 .information {
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
+
+  }
+
   .contact-list li, .information-list li {
     font-size: clamp(1.1rem, 4vw, 1.4rem);
   }
@@ -764,10 +769,12 @@ At screen width 950px and above
     }
      .container2 {
          grid-template-columns: 33% 33% 32%;;
-         grid-template-rows: 50% 50%;
+         grid-template-rows: 25% 24% 25% 24%;
          grid-template-areas: 
-         "item1 item2" 
-         "item1 item5";
+         "item2 item1 item1" 
+         "item2 item1 item1" 
+         "item5 item1 item1" 
+         "item5 item1 item1";
     }
       .container3 {
         grid-template-columns: 49% 49%;
@@ -789,6 +796,10 @@ At screen width 950px and above
     .information {
     font-size: clamp(2.1rem, 3vw, 2.5rem);
     margin-bottom: 3%
+  }
+
+  .smallInformation {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
   }
 
   .container4 .information-list li {
