@@ -32,7 +32,8 @@ html, body {
 .navigation a {
    font-size: 1.1rem;
       text-align: center;
-        padding: 20px 24px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       display: inline-block;
         color: #f2f2f2;
      text-align: center;
@@ -805,6 +806,10 @@ At screen width 950px and above
   .container4 .information-list li {
     font-size: clamp(1.3rem, 3vw, 2rem);
 }
+
+ .container2 .information, .container3 .information {
+         font-size: clamp(2.9rem, 3vw, 2.5rem);
+    }
 
 }
 
