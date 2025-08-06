@@ -16,6 +16,11 @@ html, body {
     background-size: 100% auto
 }
 
+
+/***********************************************
+* Styles related to the navigation bar
+* ul, li, a etc..
+***********************************************/
 .navigation {
      overflow: hidden;
      width: 98%;
@@ -62,30 +67,13 @@ html, body {
   color: #ffffff;
 }
 
- .container3 .item4 {
-    display: none;
-  }
-
-  #bigScreenInfoC3 {
-    display: none;
-  }
-
-  #littleScreenInfoC3 {
-    display: block;
-  }
-
-.container1 .item3 {
-  justify-content: center; 
-  flex-direction: column; 
-  height: 100%;
-} 
-
+/***********************************************
+* Styles related to the contact 
+  and information lists
+***********************************************/
 .contact-list, .information-list {
-
   margin: auto;  
- /* max-width: 300px;   NOT SURE IF THIS IS A PROBLEM         */
   text-align: left;
-  
 }
 
 .contact-list li, .information-list li {
@@ -93,8 +81,8 @@ html, body {
   align-items: flex-start; 
   text-decoration: none;
   padding-bottom: 6%;
-    font-size: clamp(1.3rem, 3vw, 2rem);
-     overflow-wrap: break-word;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  overflow-wrap: break-word;
   word-break: break-word;
 }
 
@@ -132,6 +120,11 @@ padding-top: 0;
   color: black; 
 }
 
+
+/***********************************************
+* Styles related to the containers seen on screen
+* Different sections of the page
+***********************************************/
 .containers {
     width: 98%;
     height: 100%;
@@ -192,15 +185,36 @@ padding-top: 0;
   margin: 0 auto;
 }
 
+.container3 .item4 {
+  display: none;
+}
 
+#bigScreenInfoC3 {
+  display: none;
+}
+
+#littleScreenInfoC3 {
+  display: block;
+}
+
+.container1 .item3 {
+  justify-content: center; 
+  flex-direction: column; 
+  height: 100%;
+} 
+
+
+/***********************************************
+* Styles related to the footer
+* incl. backtotop button
+***********************************************/
 footer {
  background-color: #f4efe7;   
  text-align: right;
  padding: 1rem;
  display: flex; 
  height: 40%;
- 
- /* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
+/* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
 justify-content: space-between
 }
 
@@ -224,18 +238,6 @@ footer h1 {
 
 #backToTopBtn:hover {
   background-color: #0056b3;
-}
-
-.information {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width: 90%;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  justify-content: center;
-  display: inline-flex;
-  margin: 0;
 }
 
 /*******************
@@ -269,9 +271,21 @@ assigning grid areas
 }
 
 
-/*****************
-using the font in my style guide
-*****************/
+/*******************************************
+* Styles related to the text seen on screen
+* incl. fonts, headers, information etc...
+*******************************************/
+.information {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 90%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  justify-content: center;
+  display: inline-flex;
+  margin: 0;
+}
 h1, h2, h3, p, li {
      font-family: 'Montserrat';
 }
@@ -290,9 +304,16 @@ li:first-child {
      margin: 5%
 }
 
-img {
-     width: 100%;
-     height: 100%;
+.information {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 90%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  justify-content: center;
+  display: inline-flex;
+  margin: 0;
 }
 
 .sectionTitle {
@@ -302,14 +323,20 @@ font-size: clamp(2rem, 4vw, 3rem);
 margin-bottom: 0;
 }
 
+
+/*********************************************
+* Styles related to the images seen on screen
+*********************************************/
+img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+
 #idPhoto {
     border-radius: 50%;
       
-}
-
-img {
-    width: 100%;
-    height: 100%;
 }
 
 .container1 .item1 {
@@ -318,6 +345,11 @@ img {
      margin: 1%;
 }
 
+
+/****************************************
+ALL MEDIA QUERIES BELOW
+(320-1024px)
+****************************************/
 
 /******************************
   For screen widths 374px and below,
