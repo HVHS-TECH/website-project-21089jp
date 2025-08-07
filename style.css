@@ -30,19 +30,20 @@ html, body {
      justify-content: center;
      position: fixed;
      left: 1%;
-         display: inline-block;
+     display: inline-block;
    /*  border-radius: 6px; */
 }
 
 .navigation a {
    font-size: 1.1rem;
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      display: inline-block;
-        color: #f2f2f2;
-     text-align: center;
-  justify-content: center;      
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   display: inline-block;
+   color: #f2f2f2;
+   text-align: center;
+   justify-content: center; 
+   text-decoration: none;     
 }
 
 .navigation li {
@@ -55,16 +56,22 @@ html, body {
 }
 
 .navigation ul {
-      width: 100%;
-      list-style: none;
+    width: 100%;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
 .navigation a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.navigation li:hover {
   background-color: #2a54b8;
   color: #ffffff;
+
 }
 
 /***********************************************
@@ -241,7 +248,8 @@ footer h1 {
 }
 
 /*******************
-assigning grid areas
+Styles related to assigning grid areas
++ colouring for items
 ********************/
 .item1{
      grid-area: item1;
@@ -269,7 +277,6 @@ assigning grid areas
       border: 1px solid black;
      text-align: center;
 }
-
 
 /*******************************************
 * Styles related to the text seen on screen
@@ -304,25 +311,12 @@ li:first-child {
      margin: 5%
 }
 
-.information {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width: 90%;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  justify-content: center;
-  display: inline-flex;
-  margin: 0;
-}
-
 .sectionTitle {
 text-decoration: underline double #34495e 7.5%;
 text-underline-offset: 5%;
 font-size: clamp(2rem, 4vw, 3rem);
 margin-bottom: 0;
 }
-
 
 /*********************************************
 * Styles related to the images seen on screen
@@ -332,7 +326,6 @@ img {
      height: 100%;
      object-fit: cover;
 }
-
 
 #idPhoto {
     border-radius: 50%;
@@ -344,7 +337,6 @@ img {
      border: none;
      margin: 1%;
 }
-
 
 /****************************************
 ALL MEDIA QUERIES BELOW
@@ -399,6 +391,10 @@ ALL MEDIA QUERIES BELOW
   bump up the min and max font sizes 
 *******************************/
 @media (min-width: 425px) {
+
+  #myName{
+     font-size: clamp(2.3rem, 4vw, 2.5rem);
+  }
 
    .containers {
     padding-top: 12%;
@@ -845,4 +841,93 @@ At screen width 950px and above
 
 }
 
+/****************************** 
+  At screen width 1280px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 1280px) {
 
+  .navigation a {
+    font-size: clamp(2.7rem, 3vw, 1.9rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(4rem, 4vw, 2.2rem);
+  }
+
+  .contact-list li {
+    font-size: clamp(3.4rem, 3vw, 2rem);
+  }
+
+  .softwareLang {
+    font-size: clamp(3.1rem, 4vw, 2.2rem);
+  }
+
+  #myName{
+      margin-top: 3%;
+      font-size: clamp(6.7rem, 4vw, 3.9rem);
+  }
+
+.containers {
+         padding-top: 6%;
+    }
+     .container1 {
+         padding-top: 8%;
+         grid-template-columns: 49% 50%;
+         grid-template-rows: 25% auto;
+         grid-template-areas: 
+            "item2 item2" 
+            "item1 item3" 
+    }
+     .container2 {
+         grid-template-columns: 33% 33% 32%;;
+         grid-template-rows: 25% 24% 25% 24%;
+         grid-template-areas: 
+         "item2 item1 item1" 
+         "item2 item1 item1" 
+         "item5 item1 item1" 
+         "item5 item1 item1";
+    }
+      .container3 {
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 33% 33% 32%;
+        grid-template-areas:
+        "item2 item1"
+        "item4 item3"
+        "item4 item3"
+    }
+     .container4 {
+         grid-template-columns: 33% 33% 32%;;
+         grid-template-rows: 25% 30% auto;;
+         grid-template-areas: 
+         "item1 item1 item1" 
+         "item1 item1 item1" 
+         "item2 item3 item5";
+    } 
+
+    .information {
+    font-size: clamp(2.5rem, 3vw, 2.5rem);
+    margin-bottom: 3%
+  }
+
+  .information-list li {
+    font-size: clamp(3.25rem, 3vw, 2rem);
+}
+
+.information-list {
+      padding-left: 10%;
+}
+
+  .smallInformation {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+  }
+
+  .container4 .information-list li {
+    font-size: clamp(2.6rem, 3vw, 2rem);
+}
+
+ .container2 .information, .container3 .information {
+         font-size: clamp(3.25rem, 3vw, 2.5rem);
+    }
+
+}
