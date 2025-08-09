@@ -32,6 +32,7 @@ html, body {
      left: 1%;
      display: inline-block;
    /*  border-radius: 6px; */
+   border-radius: 5px;
 }
 
 .navigation a {
@@ -276,6 +277,7 @@ Styles related to assigning grid areas
       background-color: #ffe7e7; /*#f4efe7;*/ /*  TESTING  */
       border: 1px solid black;
      text-align: center;
+     border-radius: 5px;
 }
 
 /*******************************************
@@ -872,7 +874,7 @@ At screen width 950px and above
          padding-top: 6%;
     }
      .container1 {
-         padding-top: 8%;
+         padding-top: 3%;
          grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
