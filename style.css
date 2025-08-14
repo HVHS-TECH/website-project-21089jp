@@ -318,7 +318,10 @@ text-decoration: underline double #34495e 7.5%;
 text-underline-offset: 5%;
 font-size: clamp(2rem, 4vw, 3rem);
 margin-bottom: 0;
+padding-top: 0;
 }
+
+
 
 /*********************************************
 * Styles related to the images seen on screen
@@ -874,7 +877,7 @@ At screen width 950px and above
          padding-top: 6%;
     }
      .container1 {
-         padding-top: 3%;
+         padding-top: 8%;
          grid-template-columns: 49% 50%;
          grid-template-rows: 25% auto;
          grid-template-areas: 
