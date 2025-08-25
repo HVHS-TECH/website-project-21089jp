@@ -345,7 +345,7 @@ img {
 
 /****************************************
 ALL MEDIA QUERIES BELOW
-(320-1024px)
+(320-1920px)
 ****************************************/
 
 /******************************
@@ -841,7 +841,7 @@ At screen width 950px and above
 }
 
  .container2 .information, .container3 .information {
-         font-size: clamp(2.9rem, 3vw, 2.5rem);
+         font-size: clamp(2.7rem, 3vw, 2.5rem);
     }
 
 }
