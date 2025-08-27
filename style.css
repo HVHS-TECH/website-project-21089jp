@@ -95,14 +95,32 @@ html, body {
 }
 
 .contact-list li {
-     display: flex;
-       padding: 1%;
-     
+     display: flow;
+      padding: 1%;
+}
+
+.contact-list li img {
+  object-fit: contain;
 }
 
 .contact-list ul {
      width: 80%;
      
+}
+
+ul.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  margin-bottom: 1%;
+}
+
+ul.contact-list li img {
+  width: 7%;
+  height: 5%;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .information-list {
