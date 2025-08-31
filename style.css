@@ -36,7 +36,7 @@ html, body {
 }
 
 .navigation a {
-   font-size: 1.1rem;
+    font-size: 5vw;
    text-align: center;
    padding-top: 20px;
    padding-bottom: 20px;
@@ -89,7 +89,6 @@ html, body {
   align-items: flex-start; 
   text-decoration: none;
   padding-bottom: 6%;
-  font-size: clamp(1.3rem, 3vw, 2rem);
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -97,6 +96,7 @@ html, body {
 .contact-list li {
      display: flow;
       padding: 1%;
+       font-size: 5.5vw;
 }
 
 .contact-list li img {
@@ -126,7 +126,10 @@ ul.contact-list li img {
 .information-list {
 list-style-type: square;
 padding-top: 0;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.information-list li {
+  font-size: 6.5vw;
 }
 
 .contact-list {
@@ -221,6 +224,7 @@ padding-top: 0;
 
 #littleScreenInfoC3 {
   display: block;
+  font-size: 5.5vw;
 }
 
 .container1 .item3 {
@@ -235,7 +239,7 @@ padding-top: 0;
 * incl. backtotop button
 ***********************************************/
 footer {
- background-color: #f4efe7;   
+ background-color: #ffe7e7;;   
  text-align: right;
  padding: 1rem;
  display: flex; 
@@ -247,7 +251,7 @@ justify-content: space-between
 
 footer h1 {
  text-align: left;
- font-size: clamp(1.6rem, 2vw, 2rem);
+ font-size: 4vw;
 }
 
 #backToTopButton {
@@ -257,9 +261,10 @@ footer h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3vw;
   color: white;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 #backToTopBtn:hover {
@@ -308,9 +313,9 @@ Styles related to assigning grid areas
   width: 90%;
   overflow-wrap: break-word;
   word-break: break-word;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
   justify-content: center;
   display: inline-flex;
+      font-size: 5.5vw;
   margin: 0;
 }
 h1, h2, h3, p, li {
@@ -327,14 +332,14 @@ li:first-child {
 }
 
 #myName {
-     font-size: 9vw;
-     margin: 5%
+    font-size: 10vw;
+    margin: 6%;
 }
 
 .sectionTitle {
 text-decoration: underline double #34495e 7.5%;
 text-underline-offset: 5%;
-font-size: clamp(2rem, 4vw, 3rem);
+ font-size: 9vw;
 margin-bottom: 0;
 padding-top: 0;
 }
@@ -361,6 +366,13 @@ img {
      margin: 1%;
 }
 
+#mailIcon, #homeIcon {
+  width: auto; 
+  max-width: 10%; 
+  max-height: 10%; 
+}
+
+
 /****************************************
 ALL MEDIA QUERIES BELOW
 (320-1920px)
@@ -383,30 +395,6 @@ ALL MEDIA QUERIES BELOW
     padding-top: 20%;
   }
 
-  .information {
-    font-size: clamp(1rem, 4vw, 1.3rem);
-  }
-
-  .container2 .information, .container3 .information {
-    font-size: clamp(1.1rem, 4vw, 1.3rem);
-
-  }
-
-  .contact-list li, .information-list li {
-    font-size: clamp(1.1rem, 4vw, 1.4rem);
-  }
-
-  .navigation a {
-    font-size: clamp(0.9rem, 4vw, 1.2rem);
-  }
-
-  .sectionTitle {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-  }
-
-  #myName{
-     font-size: clamp(2rem, 4vw, 2.5rem);
-  }
 }
 
 /****************************** 
@@ -415,29 +403,7 @@ ALL MEDIA QUERIES BELOW
 *******************************/
 @media (min-width: 425px) {
 
-  #myName{
-     font-size: clamp(2.3rem, 4vw, 2.5rem);
-  }
 
-   .containers {
-    padding-top: 12%;
-  }
-
-  .container1 {
-    padding-top: 17%;
-  }
-
-  .information {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-  }
-
-   .contact-list li, .information-list li {
-    font-size: clamp(1.6rem, 3vw, 2rem);
-  }
-
-   .navigation a {
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
-  }
 }
 
 /****************************** 
@@ -459,20 +425,7 @@ bump up the min and max font sizes
 *******************************/
  @media (min-width: 500px) {
 
-  #myName{
-    font-size: clamp(2.8rem, 3vw, 3rem);
-  }
-      .information {
-    font-size: clamp(1.8rem, 3vw, 2rem);
-  }
 
-   .contact-list li, .information-list li {
-    font-size: clamp(1.8rem, 3vw, 2rem);
-  }
-
-   .navigation a {
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
-  }
 }
 
 /****************************** 
@@ -485,21 +438,6 @@ bump up the min and max font sizes
     }
      .container1 {
          padding-top: 14.5%;
-    }
-     .information {
-         font-size: clamp(2rem, 3vw, 2rem);
-    }
-     .contact-list li, .information-list li {
-         font-size: clamp(2.3rem, 3vw, 2rem);
-    }
-     .navigation a {
-         font-size: clamp(1.7rem, 3vw, 1.8rem);
-    }
-    .sectionTitle{
-      font-size: clamp(2.7rem, 4vw, 3rem);
-    }
-    #myName{
-      font-size: clamp(3.8rem, 4vw, 3.9rem);
     }
 }
 
@@ -686,6 +624,7 @@ At screen width 950px and above
 
   #littleScreenInfoC3 {
     display: none;
+    
   }
 
 .containers {
@@ -718,8 +657,8 @@ At screen width 950px and above
         "item4 item3"
     }
      .container4 {
-         grid-template-columns: 33% 33% 32%;;
-         grid-template-rows: 25% 30% auto;;
+         grid-template-columns: 33% 33% 32%;
+         grid-template-rows: 25% 30% auto;
          grid-template-areas: 
          "item1 item1 item1" 
          "item1 item1 item1" 
@@ -756,41 +695,27 @@ At screen width 950px and above
     }
      .container1 {
          padding-top: 8%;
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 25% auto;
-         grid-template-areas: 
-            "item2 item2" 
-            "item1 item3" 
-    }
-     .container2 {
-         grid-template-columns: 33% 33% 32%;;
-         grid-template-rows: 25% 24% 25% 24%;
-         grid-template-areas: 
-         "item2 item1 item1" 
-         "item2 item1 item1" 
-         "item5 item1 item1" 
-         "item5 item1 item1";
-    }
-      .container3 {
-        grid-template-columns: 49% 49%;
-        grid-template-rows: 33% 33% 32%;
-        grid-template-areas:
-        "item2 item1"
-        "item4 item3"
-        "item4 item3"
-    }
-     .container4 {
-         grid-template-columns: 33% 33% 32%;;
-         grid-template-rows: 25% 30% auto;;
-         grid-template-areas: 
-         "item1 item1 item1" 
-         "item1 item1 item1" 
-         "item2 item3 item5";
-    } 
-
-.information-list {
+     }
+    .information-list {
       padding-left: 10%;
-}
+    }
 
 }
 
+/****************************** 
+  At screen width 1440px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 1440px) {
+
+.containers {
+         padding-top: 5%;
+    }
+     .container1 {
+         padding-top: 7%;
+     }
+    .information-list {
+      padding-left: 10%;
+    }
+
+}
