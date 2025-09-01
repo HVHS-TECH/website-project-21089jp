@@ -30,6 +30,7 @@ html, body {
      justify-content: center;
      position: fixed;
      left: 1%;
+     z-index:  9999;
      display: inline-block;
    /*  border-radius: 6px; */
    border-radius: 5px;
@@ -176,7 +177,7 @@ padding-top: 0;
 
 .container2 {
      grid-template-columns: 1fr;
-     grid-template-rows: 45% 55%;
+     grid-template-rows: 60% 40%;
      grid-template-areas:
       "item1"
       "item2";
@@ -232,6 +233,8 @@ padding-top: 0;
   flex-direction: column; 
   height: 100%;
 } 
+
+
 
 
 /***********************************************
@@ -371,6 +374,24 @@ img {
   max-width: 10%; 
   max-height: 10%; 
 }
+
+.container4 img {
+  object-fit: contain;
+}
+
+.container2 .item5, .container4 .item5, .container3 .item3 {
+     background-color: transparent;
+     border: none;
+     margin: 1%;
+    border-radius: 5px;
+}
+
+.container3 img {
+ transform: scaleX(-1);
+  z-index: 20;
+  border-radius: 5px;
+}
+
 
 
 /****************************************
