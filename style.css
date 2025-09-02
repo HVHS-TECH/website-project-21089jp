@@ -386,6 +386,11 @@ img {
     border-radius: 5px;
 }
 
+.container4 .item5 img {
+  object-fit: cover;
+  border-radius:  5px;
+}
+
 .container3 img {
  transform: scaleX(-1);
   z-index: 20;
