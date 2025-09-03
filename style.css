@@ -185,7 +185,7 @@ padding-top: 0;
 
 .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 35% 45%;
+    grid-template-rows: 25% 45% 30%;
     grid-template-areas:
       "item1"
       "item2"
@@ -538,6 +538,10 @@ bump up the min and max font sizes
     .item5{
         display: block;
     }
+
+    .container3 img {
+  object-fit: fill;
+}
 }
 
 /****************************** 

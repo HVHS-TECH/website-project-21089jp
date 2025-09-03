@@ -12,3 +12,13 @@ function copyEmail() {
   console.log(email)
 }
 
+ function downloadCV() {
+    console.log('Downloading CV');
+  const link = document.createElement('a');
+  link.href = 'images/JaydenPressleyMiniCV.pdf';  
+  link.download = 'JaydenPressleyCV';
+  link.click();
+  
+  console.log(link.download)
+}
+
