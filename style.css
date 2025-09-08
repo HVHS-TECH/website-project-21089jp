@@ -3,66 +3,66 @@
 * Stylesheet for one-page CV website
 * Made by Jayden Pressley
 ***********************************************/
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-padding-top: 4%;
-    scroll-behavior: smooth !important;
-    background-image: url("images/paperTexture.png");
-    background-color: rgba(255,255,255,0.5);
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-padding-top: 4%;
+  scroll-behavior: smooth !important;
+  background-image: url("images/paperTexture.png");
+  background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-    background-size: 100% auto
+  background-size: 100% auto;
 }
-
 
 /***********************************************
 * Styles related to the navigation bar
 * ul, li, a etc..
 ***********************************************/
 .navigation {
-     overflow: hidden;
-     width: 98%;
-     top: 0.25%;
-     background-color: #133c9d;
-     display: flex;
-     justify-content: center;
-     position: fixed;
-     left: 1%;
-     z-index:  9999;
-     display: inline-block;
-   /*  border-radius: 6px; */
-   border-radius: 5px;
+  overflow: hidden;
+  width: 98%;
+  top: 0.25%;
+  background-color: #133c9d;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 1%;
+  z-index: 9999;
+  display: inline-block;
+  /*  border-radius: 6px; */
+  border-radius: 5px;
 }
 
 .navigation a {
-    font-size: 5vw;
-   text-align: center;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   display: inline-block;
-   color: #f2f2f2;
-   text-align: center;
-   justify-content: center; 
-   text-decoration: none;     
+  font-size: 5vw;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .navigation li {
-     display: inline;
-     box-sizing: border-box;
-     border-right: 1px solid #ffffff4d;
-     border-left: 1px solid #ffffff4d;
-     text-align: center;
-     width: 25%;
+  display: inline;
+  box-sizing: border-box;
+  border-right: 1px solid #ffffff4d;
+  border-left: 1px solid #ffffff4d;
+  text-align: center;
+  width: 25%;
 }
 
 .navigation ul {
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .navigation a:hover {
@@ -73,21 +73,22 @@ html, body {
 .navigation li:hover {
   background-color: #2a54b8;
   color: #ffffff;
-
 }
 
 /***********************************************
 * Styles related to the contact 
   and information lists
 ***********************************************/
-.contact-list, .information-list {
-  margin: auto;  
+.contact-list,
+.information-list {
+  margin: auto;
   text-align: left;
 }
 
-.contact-list li, .information-list li {
+.contact-list li,
+.information-list li {
   display: list-item;
-  align-items: flex-start; 
+  align-items: flex-start;
   text-decoration: none;
   padding-bottom: 6%;
   overflow-wrap: break-word;
@@ -95,9 +96,9 @@ html, body {
 }
 
 .contact-list li {
-     display: flow;
-      padding: 1%;
-       font-size: 5.5vw;
+  display: flow;
+  padding: 1%;
+  font-size: 5.5vw;
 }
 
 .contact-list li img {
@@ -105,8 +106,7 @@ html, body {
 }
 
 .contact-list ul {
-     width: 80%;
-     
+  width: 80%;
 }
 
 ul.contact-list li {
@@ -125,8 +125,8 @@ ul.contact-list li img {
 }
 
 .information-list {
-list-style-type: square;
-padding-top: 0;
+  list-style-type: square;
+  padding-top: 0;
 }
 
 .information-list li {
@@ -147,71 +147,70 @@ padding-top: 0;
 
 .contact-list a {
   text-decoration: none;
-  color: black; 
+  color: black;
 }
-
 
 /***********************************************
 * Styles related to the containers seen on screen
 * Different sections of the page
 ***********************************************/
 .containers {
-    width: 98%;
-    height: 100%;
-    display: grid;
-    gap: 1%;
-    margin: 0 auto;    
-    padding-bottom: 10%;
-    padding-top: 12%;
+  width: 98%;
+  height: 100%;
+  display: grid;
+  gap: 1%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 12%;
 }
 
 .container1 {
-     padding-top: 17.5%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12.5% 50% auto;
-    grid-template-areas:
-      "item2"
-      "item1"
-      "item3";
+  padding-top: 17.5%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12.5% 50% auto;
+  grid-template-areas:
+    "item2"
+    "item1"
+    "item3";
 }
 
 .container2 {
-     grid-template-columns: 1fr;
-     grid-template-rows: 60% 40%;
-     grid-template-areas:
-      "item1"
-      "item2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    "item1"
+    "item2";
 }
 
 .container3 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 25% 45% 30%;
-    grid-template-areas:
-      "item1"
-      "item2"
-      "item3";
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 45% 30%;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3";
 }
 
 .container4 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "item1"
-      "item2"
-      "item3"
-      "item5";   
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item5";
 }
 
 .container3 .item2 li {
-     padding: 0;
+  padding: 0;
 }
 
 .container2 .item5 {
-    display: none;
+  display: none;
 }
 
 .container3 .information {
-   width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -229,33 +228,29 @@ padding-top: 0;
 }
 
 .container1 .item3 {
-  justify-content: center; 
-  flex-direction: column; 
+  justify-content: center;
+  flex-direction: column;
   height: 100%;
-} 
-
-
-
+}
 
 /***********************************************
 * Styles related to the footer
 * incl. backtotop button
 ***********************************************/
 footer {
- background-color: #ffe7e7;;   
- text-align: right;
- padding: 1rem;
- display: flex; 
- height: 40%;
-/* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
-justify-content: space-between;
-margin-top: -3vw;
+  background-color: #ffe7e7;
+  text-align: right;
+  padding: 1rem;
+  display: flex;
+  height: 40%;
+  /* PUSHES H1 TO LEFT AND BUTTON TO RIGHT*/
+  justify-content: space-between;
+  margin-top: -3vw;
 }
 
-
 footer h1 {
- text-align: left;
- font-size: 4vw;
+  text-align: left;
+  font-size: 4vw;
 }
 
 #backToTopButton {
@@ -277,7 +272,7 @@ footer h1 {
 
 .downloadBtn {
   background-color: #1e6abb;
-  border: 1px solid rgba(27, 31, 35, .15);
+  border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-sizing: border-box;
   color: #fff;
@@ -294,37 +289,36 @@ footer h1 {
   background-color: #0056b3;
 }
 
-
 /*******************
 Styles related to assigning grid areas
 + colouring for items
 ********************/
-.item1{
-     grid-area: item1;
+.item1 {
+  grid-area: item1;
 }
 
 .item2 {
-     grid-area: item2;
+  grid-area: item2;
 }
 
 .item3 {
-     grid-area: item3;
+  grid-area: item3;
 }
 
 .item4 {
-     grid-area: item4;
+  grid-area: item4;
 }
 
 .item5 {
-    display: none;
-     grid-area: item5;   
+  display: none;
+  grid-area: item5;
 }
 
 .items {
-      background-color: #ffe7e7; /*#f4efe7;*/ /*  TESTING  */
-      border: 1px solid black;
-     text-align: center;
-     border-radius: 5px;
+  background-color: #ffe7e7; /*#f4efe7;*/ /*  TESTING  */
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5px;
 }
 
 /*******************************************
@@ -339,11 +333,15 @@ Styles related to assigning grid areas
   word-break: break-word;
   justify-content: center;
   display: inline-flex;
-      font-size: 5.5vw;
+  font-size: 5.5vw;
   margin: 0;
 }
-h1, h2, h3, p, li {
-     font-family: 'Montserrat';
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: "Montserrat";
 }
 
 li:first-child {
@@ -356,69 +354,69 @@ li:first-child {
 }
 
 #myName {
-    font-size: 10vw;
-    margin: 6%;
+  font-size: 10vw;
+  margin: 6%;
 }
 
 .sectionTitle {
-text-decoration: underline double #34495e 7.5%;
-text-underline-offset: 5%;
- font-size: 9vw;
-margin-bottom: 0;
-padding-top: 0;
+  text-decoration: underline double #34495e 7.5%;
+  text-underline-offset: 5%;
+  font-size: 9vw;
+  margin-bottom: 0;
+  padding-top: 0;
 }
-
-
 
 /*********************************************
 * Styles related to the images seen on screen
 *********************************************/
 img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #idPhoto {
-    border-radius: 50%;
-      
+  border-radius: 50%;
+  background: linear-gradient(to top, black, transparent);
+  display: inline-block;
 }
 
 .container1 .item1 {
-     background-color: transparent;
-     border: none;
-     margin: 1%;
+  background-color: transparent;
+  border: none;
+  margin: 1%;
 }
 
-#mailIcon, #homeIcon {
-  width: auto; 
-  max-width: 10%; 
-  max-height: 10%; 
+#mailIcon,
+#homeIcon {
+  width: auto;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .container4 img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
-.container2 .item5, .container4 .item5, .container3 .item3 {
-     background-color: transparent;
-     border: none;
-     margin: 1%;
-    border-radius: 5px;
+.container2 .item5,
+.container4 .item5,
+.container3 .item3 {
+  background-color: transparent;
+  border: none;
+  margin: 1%;
+  border-radius: 5px;
 }
 
 .container4 .item5 img {
   object-fit: cover;
-  border-radius:  5px;
-}
-
-.container3 img {
- transform: scaleX(-1);
-  z-index: 20;
   border-radius: 5px;
 }
 
-
+.container3 img {
+  transform: scaleX(-1);
+  z-index: 20;
+  border-radius: 5px;
+}
 
 /****************************************
 ALL MEDIA QUERIES BELOW
@@ -430,8 +428,8 @@ ALL MEDIA QUERIES BELOW
   use smaller font sizes 
 *******************************/
 @media (max-width: 374px) {
-   html{
-     scroll-padding-top: 6%;
+  html {
+    scroll-padding-top: 6%;
   }
 
   .containers {
@@ -441,51 +439,39 @@ ALL MEDIA QUERIES BELOW
   .container1 {
     padding-top: 20%;
   }
-
-}
-
-/****************************** 
-  At screen width 425px and above, 
-  bump up the min and max font sizes 
-*******************************/
-@media (min-width: 425px) {
-
-
 }
 
 /****************************** 
 At screen width 480px and above,
 bump up the min and max font sizes 
 *******************************/
- @media (min-width: 480px) {
-     .containers{
-         padding-top: 11.5% ;
-    }
-     .container1{
-         padding-top:15% ;
-    }
+@media (min-width: 480px) {
+  .containers {
+    padding-top: 11.5%;
+  }
+  .container1 {
+    padding-top: 15%;
+  }
 }
 
 /****************************** 
 At screen width 500px and above,
 bump up the min and max font sizes 
 *******************************/
- @media (min-width: 500px) {
-
-
+@media (min-width: 500px) {
 }
 
 /****************************** 
   At screen width 550px and above, 
   bump up the min and max font sizes 
 *******************************/
- @media (min-width: 550px) {
-     .containers {
-         padding-top: 10%;
-    }
-     .container1 {
-         padding-top: 14.5%;
-    }
+@media (min-width: 550px) {
+  .containers {
+    padding-top: 10%;
+  }
+  .container1 {
+    padding-top: 14.5%;
+  }
 }
 
 /****************************** 
@@ -493,81 +479,81 @@ At screen width 600px and above,
 first layout change in the site,
 bump up the min and max font sizes 
 *******************************/
- @media (min-width: 600px) {
-
-
-   footer {
+@media (min-width: 600px) {
+  footer {
     margin-top: -5vw;
-   }
-     .containers {
-         padding-top: 10%;
-    }
-     .container1 {
-         padding-top: 13.5%;
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 25% auto;
-         grid-template-areas: 
-            "item2 item2" 
-            "item1 item3" 
-    }
-     .container2 {
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 50% 50%;
-         grid-template-areas: 
-         "item1 item2" 
-         "item1 item5";
-    }
-     .container3 {
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 50% 50%;
-         grid-template-areas: 
-         "item2 item3"
-         "item2 item1";
-    }
-     .container4 {
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 33% 33% 32%;
-         grid-template-areas: 
-         "item1 item2" 
-         "item1 item3" 
-         "item1 item5";
-    } 
-
-    .container2 .item5 {
-      display: block;
-    }
-
-    .information, .information-list li {
-         font-size: 5vw;
-    }
-
-    .navigation a, .contact-list li{
-      font-size: 4vw;
-    }
-
-    .contact-list li {
-        overflow-wrap: break-word;
-    }
-    .contact-list {
-         word-break: break-all;
-    }
-    
-    .sectionTitle{
-      font-size: 5.5vw;
-    }
-
-    #myName{
-      margin-top: 3%;
-      font-size: 9vw;;
+  }
+  .containers {
+    padding-top: 10%;
+  }
+  .container1 {
+    padding-top: 13.5%;
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 25% auto;
+    grid-template-areas:
+      "item2 item2"
+      "item1 item3";
+  }
+  .container2 {
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "item1 item2"
+      "item1 item5";
+  }
+  .container3 {
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "item2 item3"
+      "item2 item1";
+  }
+  .container4 {
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 33% 33% 32%;
+    grid-template-areas:
+      "item1 item2"
+      "item1 item3"
+      "item1 item5";
   }
 
-    .item5{
-        display: block;
-    }
+  .container2 .item5 {
+    display: block;
+  }
 
-    .container3 img {
-  object-fit: fill;
-}
+  .information,
+  .information-list li {
+    font-size: 5vw;
+  }
+
+  .navigation a,
+  .contact-list li {
+    font-size: 4vw;
+  }
+
+  .contact-list li {
+    overflow-wrap: break-word;
+  }
+  .contact-list {
+    word-break: break-all;
+  }
+
+  .sectionTitle {
+    font-size: 5.5vw;
+  }
+
+  #myName {
+    margin-top: 3%;
+    font-size: 9vw;
+  }
+
+  .item5 {
+    display: block;
+  }
+
+  .container3 img {
+    object-fit: fill;
+  }
 }
 
 /****************************** 
@@ -575,10 +561,10 @@ At screen width 650px and above,
 first layout change in the site,
 bump up the min and max font sizes 
 *******************************/
- @media (min-width: 650px) {
-    .item5{
-        display: block;
-    }
+@media (min-width: 650px) {
+  .item5 {
+    display: block;
+  }
 }
 
 /****************************** 
@@ -586,26 +572,25 @@ At screen width 700px and above,
 first layout change in the site,
 bump up the min and max font sizes 
 *******************************/
- @media (min-width: 700px) {
-    .containers {
-      padding-top: 9.5%;
-    }
+@media (min-width: 700px) {
+  .containers {
+    padding-top: 9.5%;
+  }
 
-     .container1 {
-      padding-top: 13%
-    }
+  .container1 {
+    padding-top: 13%;
+  }
 }
 
 /****************************** 
 At screen width 750px and above
 *******************************/
 @media (min-width: 750px) {
-
   .containers {
     padding-top: 8.5%;
   }
-  .container1{
-  padding-top: 11%;
+  .container1 {
+    padding-top: 11%;
   }
 }
 
@@ -613,39 +598,33 @@ At screen width 750px and above
 At screen width 800px and above
 *******************************/
 @media (min-width: 800px) {
-  .container1{
-  padding-top: 11%;
+  .container1 {
+    padding-top: 11%;
   }
-
 }
 
 /****************************** 
 At screen width 875px and above
 *******************************/
 @media (min-width: 875px) {
-
   .containers {
     padding-top: 8.5%;
   }
-  .container1{
-  padding-top: 10%;
+  .container1 {
+    padding-top: 10%;
   }
-
 }
-
 
 /****************************** 
 At screen width 950px and above
 *******************************/
 @media (min-width: 950px) {
-
   .containers {
     padding-top: 8.5%;
   }
-  .container1{
-  padding-top: 10%;
+  .container1 {
+    padding-top: 10%;
   }
-
 }
 
 /****************************** 
@@ -653,7 +632,6 @@ At screen width 950px and above
   bump up the min and max font sizes 
 *******************************/
 @media (min-width: 1024px) {
-
   .sectionTitle {
     font-size: 5vw;
   }
@@ -670,74 +648,73 @@ At screen width 950px and above
     display: block;
   }
 
-   #bigScreenInfoC3 {
+  #bigScreenInfoC3 {
     display: block;
   }
 
-  .item4{
+  .item4 {
     display: flex;
   }
 
   #littleScreenInfoC3 {
     display: none;
-    
   }
 
-.containers {
-         padding-top: 6%;
-    }
+  .containers {
+    padding-top: 6%;
+  }
 
-     .container1 {
-         padding-top: 9%;
-         grid-template-columns: 49% 50%;
-         grid-template-rows: 25% auto;
-         grid-template-areas: 
-            "item2 item2" 
-            "item1 item3" 
-    }
-     .container2 {
-         grid-template-columns: 33% 33% 32%;;
-         grid-template-rows: 25% 24% 25% 24%;
-         grid-template-areas: 
-         "item2 item1 item1" 
-         "item2 item1 item1" 
-         "item5 item1 item1" 
-         "item5 item1 item1";
-    }
-      .container3 {
-        grid-template-columns: 49% 49%;
-        grid-template-rows: 33% 33% 32%;
-        grid-template-areas:
-        "item2 item1"
-        "item4 item3"
-        "item4 item3"
-    }
-     .container4 {
-         grid-template-columns: 33% 33% 32%;
-         grid-template-rows: 25% 30% auto;
-         grid-template-areas: 
-         "item1 item1 item1" 
-         "item1 item1 item1" 
-         "item2 item3 item5";
-    } 
+  .container1 {
+    padding-top: 9%;
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 25% auto;
+    grid-template-areas:
+      "item2 item2"
+      "item1 item3";
+  }
+  .container2 {
+    grid-template-columns: 33% 33% 32%;
+    grid-template-rows: 25% 24% 25% 24%;
+    grid-template-areas:
+      "item2 item1 item1"
+      "item2 item1 item1"
+      "item5 item1 item1"
+      "item5 item1 item1";
+  }
+  .container3 {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 33% 33% 32%;
+    grid-template-areas:
+      "item2 item1"
+      "item4 item3"
+      "item4 item3";
+  }
+  .container4 {
+    grid-template-columns: 33% 33% 32%;
+    grid-template-rows: 25% 30% auto;
+    grid-template-areas:
+      "item1 item1 item1"
+      "item1 item1 item1"
+      "item2 item3 item5";
+  }
 
   .container4 .information-list li {
     font-size: 3.5vw;
-}
+  }
 
-.container2 .information, .container3 .information {
-  font-size: 4vw;
-  margin-bottom: 3%
-}
+  .container2 .information,
+  .container3 .information {
+    font-size: 4vw;
+    margin-bottom: 3%;
+  }
 
   .container4 .information {
     font-size: 3.25vw;
-}
+  }
 
   .information-list li {
     font-size: 3.5vw;
-}
-
+  }
 }
 
 /****************************** 
@@ -745,17 +722,15 @@ At screen width 950px and above
   bump up the min and max font sizes 
 *******************************/
 @media (min-width: 1280px) {
-
-.containers {
-         padding-top: 6%;
-    }
-     .container1 {
-         padding-top: 8%;
-     }
-    .information-list {
-      padding-left: 10%;
-    }
-
+  .containers {
+    padding-top: 6%;
+  }
+  .container1 {
+    padding-top: 8%;
+  }
+  .information-list {
+    padding-left: 10%;
+  }
 }
 
 /****************************** 
@@ -763,15 +738,13 @@ At screen width 950px and above
   bump up the min and max font sizes 
 *******************************/
 @media (min-width: 1440px) {
-
-.containers {
-         padding-top: 5%;
-    }
-     .container1 {
-         padding-top: 7%;
-     }
-    .information-list {
-      padding-left: 10%;
-    }
-
+  .containers {
+    padding-top: 5%;
+  }
+  .container1 {
+    padding-top: 7%;
+  }
+  .information-list {
+    padding-left: 10%;
+  }
 }
