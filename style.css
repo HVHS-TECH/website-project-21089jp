@@ -715,6 +715,10 @@ At screen width 950px and above
   .information-list li {
     font-size: 3.5vw;
   }
+
+  .downloadBtn {
+    font-size: 3vw;
+  }
 }
 
 /****************************** 
@@ -747,4 +751,15 @@ At screen width 950px and above
   .information-list {
     padding-left: 10%;
   }
+}
+
+/****************************** 
+  At screen width 2560px and above, 
+  bump up the min and max font sizes 
+*******************************/
+@media (min-width: 2560px) {
+  .container1 {
+    padding-top: 6%;
+  }
+
 }
